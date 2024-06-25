@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define CSS variables for themes */
+:root {
+  --primary-color-default: #000000;
+  --secondary-color-default: #EA445A;
+  --font-color-default: red;
+  --bg-color-default: yellow;
+  --heading-color-default: #5626C4;
+
+}
