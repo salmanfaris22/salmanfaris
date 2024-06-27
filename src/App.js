@@ -14,9 +14,12 @@ import LogoCarousel1 from './components/scroll/Scroll2'
 
 
 
+
+
 const App = () => {
   return (
     <div>
+    
         <Navbar/>
         <Home/>
       

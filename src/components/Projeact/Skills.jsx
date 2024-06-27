@@ -7,8 +7,8 @@ import pro3 from '../../aseet/proejact3.png';
 
 const Skills = () => {
     return (
-        <div id='project' className='bg-black min-h-screen grid items-center justify-around'>
-            <div data-aos="fade-right" className='text-white font-bold text-4xl'>
+        <div  id='project'  className='bg-black mt-12 min-h-screen grid items-center justify-around'>
+            <div data-aos="fade-right" className='mb-12 text-white font-bold text-4xl'>
                 Projects
             </div>
             <div>

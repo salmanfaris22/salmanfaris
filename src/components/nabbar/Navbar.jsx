@@ -121,6 +121,11 @@ const Navbar = () => {
           <div className="px-8 h-[300px]">
             <div className="flex flex-col items-center h-[300px] bg-black justify-around  text-white font-bold tracking-wider">
             <Link
+             onClick={() => setToggleMenu(false)}
+             data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1300"
+                  to="skill"
                   to="home"
                   smooth={true}
                   duration={500}
@@ -129,6 +134,11 @@ const Navbar = () => {
                   Home
                 </Link>
                 <Link
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1300"
+                  to="skill"
+                 onClick={() => setToggleMenu(false)}
                   to="about"
                   smooth={true}
                   duration={500}
@@ -137,6 +147,11 @@ const Navbar = () => {
                   About
                 </Link>
                 <Link
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1300"
+                  to="skill"
+                 onClick={() => setToggleMenu(false)}
                   to="project"
                   smooth={true}
                   duration={500}
@@ -145,6 +160,11 @@ const Navbar = () => {
                   Project
                 </Link>
                 <Link
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1300"
+                  to="skill"
+                 onClick={() => setToggleMenu(false)}
                   to="skill"
                   smooth={true}
                   duration={500}
@@ -153,6 +173,11 @@ const Navbar = () => {
                   Skills
                 </Link>
                 <Link
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1300"
+                  to="skill"
+                 onClick={() => setToggleMenu(false)}
                   to="contact"
                   smooth={true}
                   duration={500}

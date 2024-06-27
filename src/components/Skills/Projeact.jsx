@@ -8,7 +8,7 @@ import { IoLogoDocker } from "react-icons/io5";
 
 const Project = () => {
     return (
-        <div id='skill' className='bg-black flex flex-col md:h-screen text-white justify-center gap-20 items-center p-4'>
+        <div id='skill' className='mt-32 bg-black flex flex-col md:h-screen text-white justify-center gap-20 items-center p-4'>
             <div data-aos="fade-right" className='font-bold text-6xl'>
                 Skills
             </div>

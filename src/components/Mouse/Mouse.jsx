@@ -1,51 +1,40 @@
 import React, { useState, useEffect } from 'react';
 import './mouse.css'; // Import your CSS file
 
+
+// Make sure to import your CSS file correctly
+
 const CustomCursor = () => {
-  const [xPos, setXPos] = useState(0);
-  const [yPos, setYPos] = useState(0);
-  const [isLarge, setIsLarge] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [hovered, setHovered] = useState(false);
 
-  const handleMouseMove = (event) => {
-    setXPos(event.clientX);
-    setYPos(event.clientY);
+  const handleMouseMove = (e) => {
+    setPosition({ x: e.clientX, y: e.clientY });
   };
 
-  const handleMouseOverText = () => {
-    setIsLarge(true);
+  const handleMouseOver = () => {
+    setHovered(true);
   };
 
-  const handleMouseOutText = () => {
-    setIsLarge(false);
+  const handleMouseOut = () => {
+    setHovered(false);
   };
 
   useEffect(() => {
-    window.addEventListener('mousemove', handleMouseMove);
-
-    // Add event listeners for all text elements
-    const textElements = document.querySelectorAll('p, span, a, h1, h2, h3, h4, h5, h6');
-    textElements.forEach(element => {
-      element.addEventListener('mouseover', handleMouseOverText);
-      element.addEventListener('mouseout', handleMouseOutText);
-    });
-
+    document.addEventListener('mousemove', handleMouseMove);
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-
-      // Clean up event listeners
-      textElements.forEach(element => {
-        element.removeEventListener('mouseover', handleMouseOverText);
-        element.removeEventListener('mouseout', handleMouseOutText);
-      });
+      document.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
   return (
-    <div 
-      className={`custom-cursor ${isLarge ? 'large' : ''}`} 
-      style={{ left: xPos, top: yPos }}
-    >
-      {/* Your cursor content here (e.g., an image, text, or SVG) */}
+    <div className="">
+      <div
+        className={`cursor ${hovered ? 'hovered' : ''}`}
+        style={{ left: `${position.x}px`, top: `${position.y}px` }}
+      ></div>
+    
+     
     </div>
   );
 };

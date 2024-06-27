@@ -2,12 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Define CSS variables for themes */
-:root {
-  --primary-color-default: #000000;
-  --secondary-color-default: #EA445A;
-  --font-color-default: red;
-  --bg-color-default: yellow;
-  --heading-color-default: #5626C4;
+.dark {
+  --bg-primary: #1a202c;
+  --text-primary: #cbd5e0;
+}
 
+.light {
+  --bg-primary: #edf2f7;
+  --text-primary: #2d3748;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }

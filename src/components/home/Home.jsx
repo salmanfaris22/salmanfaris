@@ -2,15 +2,15 @@ import React from 'react';
 import Imag from '../../aseet/unnamed-removebg.png';
 import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import './home.css'; // Assuming you have custom CSS styles in home.css
-import DarkMood from '../DarkMood/DarkMood';
+
 import { Link } from "react-scroll";
 
 const Home = () => {
   return (
     <div id='home' className="bg-black min-h-screen grid grid-cols-1 md:grid-cols-2">
-      <div className="flex flex-col mt-20 md:mt-0 justify-center items-center md:items-end mt-6 md:mt-0 px-6 md:px-12">
+      <div className="flex flex-col mt-36 md:mt-0 justify-center items-center md:items-end  px-6 md:px-12">
         <div className='space-y-6 text-center md:text-left ' data-aos="fade-right">
-          <div className="text-2xl md:text-3xl font-semibold text-white  "><DarkMood/></div>
+          <div className="text-2xl md:text-3xl font-semibold text-white  "></div>
           <div 
           data-aos="fade-right"
           data-aos-offset="300"
@@ -25,8 +25,9 @@ const Home = () => {
           data-aos-easing="ease-in-sine"
            data-aos-duration="1000"
           className="text-sm md:text-base lg:text-lg text-white">
-            Lorem ipsum dolor sit amet architecto nisi distinctio temporibus, <br />
-            soluta magni. Alias quaerat nisi explicabo tenetur ullam.
+           I turn ideas into reality with code. Coffee, creativity,
+           <br />
+            and clean code fuel my work!
           </div>
           <div className='flex items-center gap-7'>
             <Link
