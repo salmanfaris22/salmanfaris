@@ -1,11 +1,24 @@
 .outer-circle {
   width: 400px; /* Adjust as needed */
   height: 400px; /* Adjust as needed */
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid #ccc;
   border-radius: 50%;
+  overflow: hidden;
+  background: black;
   
 
+}
+.im1{
+height: 600px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+
+ 
 }
 
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   PaperAirplaneIcon,
   MoonIcon,
@@ -7,13 +7,19 @@ import {
 } from "@heroicons/react/24/outline";
 import { Link } from "react-scroll";
 import "./navbar.css";
+import 'aos/dist/aos.css'
+import AOS from 'aos'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
-    <div className="fixed w-[100%] z-50">
-      <nav className='bg-black indexi'>
+    <div className="fixed w-full z-50" data-aos="fade-down">
+      <nav className="bg-black indexi">
         <div className="max-w-7xl mx-auto">
           <div className="flex mx-auto justify-between w-5/6">
             {/* Primary menu and logo */}
@@ -27,14 +33,60 @@ const Navbar = () => {
               </div>
               {/* primary */}
               <div className="hidden lg:flex gap-8 text-white font-bold">
-                <Link to="home" smooth={true} duration={500} className="hover:text-hover cursor-pointer">
+                <Link
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="700"
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-hover cursor-pointer"
+                >
                   Home
                 </Link>
-                <Link to="about" smooth={true} duration={500} className="hover:text-hover cursor-pointer">
+                <Link
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="900"
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-hover cursor-pointer"
+                >
                   About
                 </Link>
-                <Link to="project" smooth={true} duration={500} className="hover:text-hover cursor-pointer">
-                Project
+                <Link
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1100"
+                  to="project"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-hover cursor-pointer"
+                >
+                  Project
+                </Link>
+                <Link
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1300"
+                  to="skill"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-hover cursor-pointer"
+                >
+                  Skills
+                </Link>
+                <Link
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  className="hover:text-hover cursor-pointer"
+                >
+                  Contact
                 </Link>
               </div>
             </div>
@@ -46,7 +98,7 @@ const Navbar = () => {
                   <SunIcon className="h-6 w-6" />
                 </div>
                 <div>
-                  <button className="rounded-full border-solid border-2 border-gray-300 py-2 px-4 hover:bg-gray-700 hover:text-gray-100">
+                  <button className="rounded-full  border-solid border-2 border-gray-300 py-2 px-4 hover:bg-gray-700 hover:text-gray-100">
                     Free Trial
                   </button>
                 </div>
@@ -62,22 +114,53 @@ const Navbar = () => {
         </div>
         {/* mobile navigation */}
         <div
-          className={`fixed z-40 w-full bg-white overflow-hidden flex flex-col lg:hidden gap-12 origin-top duration-700 ${
-            !toggleMenu ? "h-0" : "h-[35%]"
+          className={`fixed z-40 w-full overflow-hidden text-white flex flex-col lg:hidden gap-12 origin-top duration-700 ${
+            !toggleMenu ? "h-0" : "h-[500px]"
           }`}
         >
-          <div className="px-8">
-            <div className="flex flex-col mt-10 items-center text-black gap-8 font-bold tracking-wider">
-              <Link to="home" smooth={true} duration={500} className="cursor-pointer">
-                Home
-              </Link>
-              <Link to="about" smooth={true} duration={500} className="cursor-pointer">
-                About
-              </Link>
-              <Link to="project" smooth={true} duration={500} className="cursor-pointer">
-              project
-              </Link>
-            </div>   
+          <div className="px-8 h-[300px]">
+            <div className="flex flex-col items-center h-[300px] bg-black justify-around  text-white font-bold tracking-wider">
+            <Link
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  className= "hover:text-2xl transform translate-x-0.5 duration-500   hover:text-hover cursor-pointer"
+                >
+                  Home
+                </Link>
+                <Link
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                           className= "hover:text-2xl transform translate-x-0.5 duration-500   hover:text-hover cursor-pointer"
+                >
+                  About
+                </Link>
+                <Link
+                  to="project"
+                  smooth={true}
+                  duration={500}
+                           className= "hover:text-2xl transform translate-x-0.5 duration-500   hover:text-hover cursor-pointer"
+                >
+                  Project
+                </Link>
+                <Link
+                  to="skill"
+                  smooth={true}
+                  duration={500}
+                         className= "hover:text-2xl transform translate-x-0.5 duration-500   hover:text-hover cursor-pointer"
+                >
+                  Skills
+                </Link>
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                          className= "hover:text-2xl transform translate-x-0.5 duration-500   hover:text-hover cursor-pointer"
+                >
+                  Contact
+                </Link>
+            </div>
           </div>
         </div>
       </nav>
