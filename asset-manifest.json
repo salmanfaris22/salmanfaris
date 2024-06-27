@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/salmanfaris/static/css/main.fbb1dba9.css",
+    "main.js": "/salmanfaris/static/js/main.916ca649.js",
+    "static/js/453.738e5dbc.chunk.js": "/salmanfaris/static/js/453.738e5dbc.chunk.js",
+    "static/media/unnamed-removebg.png": "/salmanfaris/static/media/unnamed-removebg.846006f09c18136c0bb3.png",
+    "static/media/proejact3.png": "/salmanfaris/static/media/proejact3.0169d84d43a1a2e50ba2.png",
+    "static/media/projeact.jpeg": "/salmanfaris/static/media/projeact.07e892f4a4cfb4e888b7.jpeg",
+    "static/media/projeact 3.jpeg": "/salmanfaris/static/media/projeact 3.8e53fbf6826be7deb9c7.jpeg",
+    "static/media/projeact2.jpeg": "/salmanfaris/static/media/projeact2.db627c590507210ecc87.jpeg",
+    "index.html": "/salmanfaris/index.html",
+    "main.fbb1dba9.css.map": "/salmanfaris/static/css/main.fbb1dba9.css.map",
+    "main.916ca649.js.map": "/salmanfaris/static/js/main.916ca649.js.map",
+    "453.738e5dbc.chunk.js.map": "/salmanfaris/static/js/453.738e5dbc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbb1dba9.css",
+    "static/js/main.916ca649.js"
+  ]
+}
