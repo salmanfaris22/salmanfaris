@@ -72,10 +72,10 @@ const Contact = () => {
           </div>
           <div className="flex items-center justify-between">
             <input
-              data-aos="fade-right"
+       
               type="submit"
               value="Send"
-              className="bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline cursor-pointer"
+              className="bg-black  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline cursor-pointer"
             />
             <div className='flex gap-5 text-2xl justify-center items-center'>
               <a href='https://github.com/salmanfaris22' target="_blank" rel="noopener noreferrer">
