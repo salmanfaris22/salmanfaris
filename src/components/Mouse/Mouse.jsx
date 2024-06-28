@@ -28,7 +28,7 @@ const CustomCursor = () => {
   }, []);
 
   return (
-    <div className="">
+    <div className="hidden md:block">
       <div
         className={`cursor ${hovered ? 'hovered' : ''}`}
         style={{ left: `${position.x}px`, top: `${position.y}px` }}

@@ -18,7 +18,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed w-full z-50" data-aos="fade-down">
+    <div className=" fixed w-full z-50" data-aos="fade-down">
       <nav className="bg-transparent md:bg-black indexi">
         <div className="max-w-7xl mx-auto">
           <div className="flex mx-auto justify-between w-5/6">
@@ -119,7 +119,7 @@ const Navbar = () => {
           }`}
         >
           <div className="px-8 h-[300px]">
-            <div className="flex flex-col items-center h-[300px] bg-black justify-around  text-white font-bold tracking-wider">
+            <div className="flex flex-col items-center h-[400px] bg-white justify-around rounded-md text-black font-bold tracking-wider">
             <Link
              onClick={() => setToggleMenu(false)}
              data-aos="fade-down"
