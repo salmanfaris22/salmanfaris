@@ -125,7 +125,7 @@ const Navbar = () => {
              data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1300"
-                  to="skill"
+                 
                   to="home"
                   smooth={true}
                   duration={500}
@@ -137,7 +137,7 @@ const Navbar = () => {
                 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1300"
-                  to="skill"
+               
                  onClick={() => setToggleMenu(false)}
                   to="about"
                   smooth={true}
@@ -150,7 +150,7 @@ const Navbar = () => {
                 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1300"
-                  to="skill"
+                
                  onClick={() => setToggleMenu(false)}
                   to="project"
                   smooth={true}
@@ -163,7 +163,7 @@ const Navbar = () => {
                 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1300"
-                  to="skill"
+            
                  onClick={() => setToggleMenu(false)}
                   to="skill"
                   smooth={true}
@@ -176,7 +176,7 @@ const Navbar = () => {
                 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1300"
-                  to="skill"
+                 
                  onClick={() => setToggleMenu(false)}
                   to="contact"
                   smooth={true}
