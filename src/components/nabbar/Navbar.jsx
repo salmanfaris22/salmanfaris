@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full z-50" data-aos="fade-down">
-      <nav className="bg-black indexi">
+      <nav className="bg-transparent md:bg-black indexi">
         <div className="max-w-7xl mx-auto">
           <div className="flex mx-auto justify-between w-5/6">
             {/* Primary menu and logo */}
@@ -28,11 +28,11 @@ const Navbar = () => {
               <div>
                 <a href="/" className="flex gap-1 font-bold items-center">
                   <PaperAirplaneIcon className="h-6 w-6 text-white" />
-                  <span>Paper.io</span>
+                 
                 </a>
               </div>
               {/* primary */}
-              <div className="hidden lg:flex gap-8 text-white font-bold">
+              <div className="hidden   lg:flex gap-8 text-white font-bold">
                 <Link
                 data-aos="fade-down"
                 data-aos-easing="linear"
