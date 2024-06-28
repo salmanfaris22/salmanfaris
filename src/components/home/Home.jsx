@@ -52,7 +52,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex justify-center md:justify-start items-center mt-6 md:mt-0">
+      <div className="flex justify-center md:justify-start items-center mt-6 md:mt-0"> 
         <div className="outer-circle md:ml-24" data-aos="fade-left">
           <div className="inner-image">
             <img data-aos="fade-left" className="h-48 im1 md:h-64 lg:h-96" src={Imag} alt="Salman Faris" />
