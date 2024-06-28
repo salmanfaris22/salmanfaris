@@ -15,4 +15,19 @@
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  
+}
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  border-radius: 100%;
+  
+  width: 5px;  /* Remove scrollbar space */
+  background: rgb(0, 0, 0);  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
 }

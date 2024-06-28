@@ -2,8 +2,8 @@
 .cursor,
 .cursorInner {
   position: fixed;
-  width: 40px;
-  height: 40px;
+  width: 10px;
+  height: 10px;
   border: 2px solid rgb(255, 255, 255);
   background: #ffffff;
   border-radius: 50%;
@@ -18,8 +18,8 @@
 }
 
 .cursorInner {
-  width: 100px;
-  height: 100px;
+  width: 10px;
+  height: 10px;
   background: transparent;
 
   transition: all 1s  ease-out; /* Smooth out transition for inner cursor */
