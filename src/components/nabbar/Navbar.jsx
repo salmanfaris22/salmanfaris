@@ -18,7 +18,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className=" fixed w-full z-50" data-aos="fade-down">
+    <div className=" fixed w-[100%] z-50" data-aos="fade-down">
       <nav className="bg-transparent md:bg-black indexi">
         <div className="max-w-7xl mx-auto">
           <div className="flex mx-auto justify-between w-5/6">
@@ -114,7 +114,7 @@ const Navbar = () => {
         </div>
         {/* mobile navigation */}
         <div
-          className={`fixed z-40 w-full overflow-hidden text-white flex flex-col lg:hidden gap-12 origin-top duration-700 ${
+          className={`fixed z-40 w-[100%] overflow-hidden text-white flex flex-col lg:hidden gap-12 origin-top duration-700 ${
             !toggleMenu ? "h-0" : "h-[500px]"
           }`}
         >
