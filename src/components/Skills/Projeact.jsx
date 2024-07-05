@@ -34,7 +34,7 @@ const Project = () => {
                         <div  className='flex flex-col justify-around items-center gap-5'>
                         <div data-aos="fade-down" className='flex justify-center hover:text-black hover:bg-white items-center gap-3 border p-3 rounded-md w-full max-w-[80%]'>
                                 <FaReact size={30} /> {/* Adjust size as needed */}
-                                <span className='ml-2'>React</span>
+                                <span className='ml-2'>React js</span>
                             </div>
                             <div data-aos="fade-down" className='flex justify-center hover:text-black hover:bg-white items-center gap-3 border p-3 rounded-md w-full max-w-[80%]'>
                                 <SiRedux size={30} /> {/* Adjust size as needed */}
