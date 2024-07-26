@@ -1,5 +1,5 @@
 import React from 'react';
-import Imag from '../../aseet/unnamed-removebg.png';
+import Imag from '../../aseet/aa.png';
 import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import './home.css'; // Assuming you have custom CSS styles in home.css
 
